@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
                 child: Text(
                   'Log-In',
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 35,
                     fontFamily: 'Rubik Medium',
                     color: Color(0xff2D3142),
                   ),
@@ -84,7 +84,7 @@ class MyApp extends StatelessWidget {
                 height: 25,
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 25, right: 25, top: 15),
+                padding: const EdgeInsets.only(left: 30, right: 30, top: 15),
                 child: TextFormField(
                   decoration: const InputDecoration(
                     hintText: 'Email',
@@ -106,12 +106,14 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 25, right: 25, top: 15),
+                padding: const EdgeInsets.only(left: 30, right: 30, top: 25),
                 child: TextFormField(
                   decoration: const InputDecoration(
                     hintText: 'Password',
                     fillColor: Color(0xffF8F9FA),
                     filled: true,
+                    suffixIcon: Icon(Icons.visibility_off_outlined,
+                    color: Color(0xff323F4B),),
                     prefixIcon: Icon(
                       Icons.lock,
                       color: Color(0xff323F4B),
